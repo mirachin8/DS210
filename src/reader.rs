@@ -3,7 +3,7 @@ use csv::Reader;
 use serde::Deserialize;
 use ndarray::Array2;
 
-/// Struct to deserialize each CSV row into and define datatypes
+/// Struct to deserialize each CSV row and define datatypes
 #[derive(Debug, Deserialize)]
 pub struct ExoplanetRow {
     pub koi_disposition: u8,
