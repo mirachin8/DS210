@@ -6,6 +6,7 @@ use linfa::metrics::ToConfusionMatrix;
 use ndarray::{Array1, Array2};
 
 //struct keeps my code organized and makes it easy to access accuracy and f1 score later
+#[allow(dead_code)]
 pub struct ModelReport {
     pub model: DecisionTree<f64, usize>,
     pub predictions: Array1<usize>,
